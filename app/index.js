@@ -6,11 +6,8 @@ var express = require('express'),
 // package.json
 var pjson = require('../package.json')
 
-// Models
-var Note = require('./models/note')
-
-// // Routes
-// var noteRoute = require('./routes/note')
+// Routes
+var noteRoute = require('./routes/note')
 
 var app = express();
 var port = process.env.PORT || 8080
@@ -31,6 +28,8 @@ app.use('/api', router)
 router.get('/', function(req, res) {
   res.send('Welcome to the Noted API!')
 })
+
+router.use('/notes', noteRoute)
 
 app.listen(port, function() {
   console.log(pjson.name + ' listening on port ' + port)
