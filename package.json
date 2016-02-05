@@ -1,0 +1,17 @@
+{
+  "name": "noted-api",
+  "description": "An API for my iOS app, Noted",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auermi/noted-api.git"
+  },
+  "author": "Michael Auer",
+  "bugs": {
+    "url": "https://github.com/auermi/noted-api/issues"
+  },
+  "homepage": "https://github.com/auermi/noted-api#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.4.1"
+  }
+}
