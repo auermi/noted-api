@@ -20,5 +20,13 @@ router.route('/')
       res.json( { message: 'Note created!'} )
     })
   })
+  .get(function(req,res) {
+    Note.find(function(err, notes) {
+      if (err)
+        res.send(err)
+
+      res.json(notes)
+    })
+  })
 
 module.exports = router
