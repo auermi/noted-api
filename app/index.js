@@ -4,11 +4,11 @@ var express = require('express'),
   mongoose = require('mongoose')
 
 // package.json
-var pjson = require('./package.json')
+var pjson = require('../package.json')
 
-// // Models
-// var Note = require('./app/models/note')
-//
+// Models
+var Note = require('./models/note')
+
 // // Routes
 // var noteRoute = require('./routes/note')
 
