@@ -31,6 +31,13 @@ router.get('/', function(req, res) {
 
 router.use('/notes', noteRoute)
 
+// 404
+app.use(function(req, res, next) {
+  var err = new Error('Not Found')
+  err.status = 404
+  next(err)
+})
+
 app.listen(port, function() {
   console.log(pjson.name + ' listening on port ' + port)
 })
