@@ -1,6 +1,10 @@
 {
   "name": "noted-api",
   "description": "An API for my iOS app, Noted",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/auermi/noted-api.git"
@@ -13,5 +17,8 @@
   "dependencies": {
     "express": "^4.13.4",
     "mongoose": "^4.4.1"
+  },
+  "devDependencies": {
+    "body-parser": "^1.16.0"
   }
 }
